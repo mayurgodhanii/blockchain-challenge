@@ -6,7 +6,7 @@ from rest_framework_simplejwt import tokens, views as jwt_views, serializers as 
 from user import serializers, models
 from web3 import Web3
 
-INFURA_URL = "https://mainnet.infura.io/v3/2dacea50c39c45e5a4d9bdb25a133454"
+INFURA_URL = "https://mainnet.infura.io/v3/YOUR_INFURA_API_KEY"
 web3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 def get_user_tokens(user):
